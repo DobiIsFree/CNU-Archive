@@ -25,7 +25,7 @@ int main() {
 	Animal dog("Jindo");
 	dog.showName();
 
-	Animal catDog = dog + cat;//°³³ÉÀÌ ÇÕ¼º
+	Animal catDog = dog + cat;//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Õ¼ï¿½
 	catDog.showName();
 	dog.showName();
 
