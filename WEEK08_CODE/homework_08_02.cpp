@@ -16,7 +16,7 @@ public:
         delete this->_strategy;
         this->_strategy = strategy;
     }
-    void doSomething(int num1, int num2){
+    void executeStrategy(int num1, int num2){
         this->_strategy->execute(num1, num2);
     }
 };
@@ -45,10 +45,10 @@ public:
 
 int main(){
     Context *context = new Context(new OperationAdd());
-    context->doSomething(10, 5);
+    context->executeStrategy(10, 5);
     context = new Context(new OperationSubtract());
-    context->doSomething(10, 5);
+    context->executeStrategy(10, 5);
     context = new Context(new OperationMultiply());
-    context->doSomething(10, 5);
+    context->executeStrategy(10, 5);
 
 }
