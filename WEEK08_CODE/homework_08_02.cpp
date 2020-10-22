@@ -50,5 +50,4 @@ int main(){
     context->executeStrategy(10, 5);
     context = new Context(new OperationMultiply());
     context->executeStrategy(10, 5);
-
 }
