@@ -17,7 +17,7 @@ class Manager : public Employee {
 public:
 	Manager(int managerBonus, std::string name, int age) : managerBonus(managerBonus), Employee(name, age) {}
 
-	void showInfo() { std::cout << "Manager Name:" << name << ", Age: " << age << ", managerBonus:" << managerBonus << std::endl; }
+	virtual void showInfo() { std::cout << "Manager Name:" << name << ", Age: " << age << ", managerBonus:" << managerBonus << std::endl; }
 };
 
 class Intern : public Employee {
@@ -25,7 +25,7 @@ class Intern : public Employee {
 public:
 	Intern(std::string major, std::string name, int age) : majorName(major), Employee(name, age) {}
 
-	void showInfo() { std::cout << "Intern Name:" << name << ", Age: " << age << ", Major:" << majorName << std::endl; }
+	virtual void showInfo() { std::cout << "Intern Name:" << name << ", Age: " << age << ", Major:" << majorName << std::endl; }
 };
 
 class Janitor : public Employee {
@@ -33,7 +33,7 @@ class Janitor : public Employee {
 public:
 	Janitor(int salary, std::string name, int age) : salary(salary), Employee(name, age) {}
 
-	void showInfo() { std::cout << "Janitor Name:" << name << ", Age: " << age << ", Salary:" << salary << std::endl; }
+	virtual void showInfo() { std::cout << "Janitor Name:" << name << ", Age: " << age << ", Salary:" << salary << std::endl; }
 };
 
 int main() {
