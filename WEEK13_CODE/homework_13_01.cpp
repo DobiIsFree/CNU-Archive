@@ -3,9 +3,6 @@
 #include <forward_list>
 #include <functional>
 
-/*
-자료형에 상관 없이 정렬 이뤄저, comp()할 때 앞 뒤 대소 관계를 통해 오름차순 내림차순 정렬 ㅇㅇ
-*/
 template <typename ForwardIterator, typename Compare>
 void bubble_sort(ForwardIterator first, ForwardIterator last, Compare comp) {
 	for (auto sorted = first; first != last; last = sorted) {
@@ -18,6 +15,7 @@ void bubble_sort(ForwardIterator first, ForwardIterator last, Compare comp) {
 		}
 	}
 }
+
 struct compLess {
   bool operator()(const int& a, const int& b) const { return a > b; }
 };
