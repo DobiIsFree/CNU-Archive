@@ -12,14 +12,13 @@ public:
 //Unary operator
  int operator++(int){ //postfix operation (indicated by dummy 'int')
    //�ۼ�1
-   int temp = *this;
+   int temp = number;
    number++;
    return temp;
  }
  int operator++(){ //prefix operation
    //�ۼ�2
-   number++;
-   return *this;
+   return ++number;
  }
 
  friend std::ostream& operator<<(std::ostream&, MyData &);

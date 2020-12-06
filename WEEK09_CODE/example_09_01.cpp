@@ -18,7 +18,7 @@ private:
 	std::vector<char> vector_;
 };
 
-class Derived : public Base1, Base2 {
+class Derived : public Base2, Base1 {
 public:
 	Derived(const std::string& str) : Base2(1024), Base1(512){
 		i = 0;  std::cout << "Derived";

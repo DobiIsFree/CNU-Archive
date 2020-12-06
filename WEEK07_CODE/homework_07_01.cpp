@@ -19,8 +19,8 @@ std::ostream& operator<<(std::ostream& os, AnyString a)
 int main() {
 	std::ofstream out("testOveroding.txt");
 	AnyString a("Hello, this is operator overloading test!!!");
-	//std::string output = a.getAnyString();
-	//out << output << std::endl;
+	std::string output = a.getAnyString();
+	out << output << std::endl;
 	out << a << std::endl; 
 	
 	return 0;

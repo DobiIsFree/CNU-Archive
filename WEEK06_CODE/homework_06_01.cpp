@@ -55,6 +55,6 @@ int main() {
 	cat1.eat(4).eat(5).eat(6);
 	cat1.show_status();
 
-	getchar();
+	//getchar();
 	return 0;
 }

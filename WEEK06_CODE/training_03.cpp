@@ -29,6 +29,6 @@ int main() {
 	catDog.showName();
 	dog.showName();
 
-	getchar();
+	//getchar();
 	return 0;
 }

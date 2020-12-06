@@ -33,6 +33,6 @@ int main() {
 
 	dog.showName();
 
-	getchar();
+	//getchar();
 	return 0;
 }

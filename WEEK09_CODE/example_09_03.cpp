@@ -34,5 +34,5 @@ int main() {
     Parent* p = new Child();
     delete p;
 
-    getchar();
+    //getchar();
 }
