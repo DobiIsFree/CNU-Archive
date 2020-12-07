@@ -15,5 +15,5 @@ int main() {
 	auto x = sum(42.5, 10, 11.1f, 1234);
 	std::cout << x;
 
-	getchar();
+	//getchar();
 }

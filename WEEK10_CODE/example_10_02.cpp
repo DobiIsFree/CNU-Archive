@@ -29,6 +29,6 @@ int main() {
 	Derived* yy = dynamic_cast<Derived*>(xx);
 	yy->what();
 
-	getchar();
+	//getchar();
 	return 0;
 }

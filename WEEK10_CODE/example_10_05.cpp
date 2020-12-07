@@ -26,9 +26,11 @@ int main() {
 
 	std::cout << " === Pointer ===" << std::endl;
 	Base* xx = &c;//OK.upcast
+	// Derived* yy = dynamic_cast<Derived*>(xx);
+	// 런타임 에러 : 참조를 다룰 때 호환되지 않아, 예외를 던지게 된다.
 	Derived yy = dynamic_cast<Derived&>(p); // 잘못된 레퍼런스 캐스팅 base를 derived로 다운캐스팅 시도
 	yy.what();
 
-	getchar();
+	//getchar();
 	return 0;
 }

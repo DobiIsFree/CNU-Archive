@@ -26,9 +26,10 @@ int main() {
 
 	std::cout << " === Pointer ===" << std::endl;
 	Base* xx = &c;//OK.upcast
+	xx->what();
 	Derived* yy = static_cast<Derived*>(xx);
 	yy->what();
 
-	getchar();
+	//getchar();
 	return 0;
 }

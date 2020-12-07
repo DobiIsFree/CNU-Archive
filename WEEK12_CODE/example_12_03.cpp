@@ -10,10 +10,13 @@ void func(const T& x) {
 int main() {
 	func<int>(1);
 	std::cout << std::endl;
+
 	func<int>(1);
 	std::cout << std::endl;
+	
 	func<double>(1.1);
 	std::cout << std::endl;
+	
 	func<int>(1);
 	return 0;
 /*	

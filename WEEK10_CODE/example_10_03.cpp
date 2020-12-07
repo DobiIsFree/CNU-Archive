@@ -7,7 +7,7 @@ class Base {
 
 public:
 	Base() : s("Base") { std::cout << "Base class constructor" << std::endl; }
-
+	// virtual 붙여 polymorphic class로 만들어 런타임 체크를 수행
 	virtual void what() { std::cout << s << std::endl; }
 };
 
