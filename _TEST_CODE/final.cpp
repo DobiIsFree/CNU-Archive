@@ -1,22 +1,32 @@
 #include <iostream>
+#include <fstream>
+#include <string>
+#include <sstream>
 #include <vector>
+using namespace std;
 
-int main() {
-     std::vector<int> vec;
-     vec.push_back(11);
-     vec.push_back(22);
-     vec.push_back(33);
-     vec.push_back(44);
-     // Remove an element from vector if its value is equal to 22
-     for (std::vector<int>::iterator itr = vec.begin(); itr != vec.end(); ++itr) {
-          if (*itr == 22) {
-               vec.erase(itr);
-               itr= vec.begin();
-          }
+
+char selectCommand(string input, vector<string> &para)
+{
+	char command;
+	command = input[0];
+	if (input.length() != 1) {
+		para.clear();
+		input = input.substr(2, input.length() - 3);
+		istringstream ss(input);
+		string p;
+		while (getline(ss, p, ',')) {
+			para.push_back(p);
+		}
+	}
+     cout<<"Debug : "<<command<<endl;
+     for(int i=0; i<para.size(); i++){
+          cout<<"Debug: "<< para[i]<<endl;
      }
-      // Print Entire vector contents after the removal of element
-     for (std::vector<int>::iterator itr = vec.begin(); itr != vec.end(); ++itr) {
-          std::cout << "Vector element: " << *itr << std::endl;
-     }
-     
+	return command;
+}
+int main(){
+   string s = ")";
+   cout<<s.length();
+
 }

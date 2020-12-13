@@ -1,6 +1,6 @@
 #include <vector>
 #include <iostream>
-
+// focttory pattern 적용ㄴㄴ
 class Car{
 public:
     virtual void echoName() = 0;

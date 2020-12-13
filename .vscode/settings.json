@@ -64,6 +64,7 @@
         "fstream": "cpp",
         "iomanip": "cpp",
         "stack": "cpp",
-        "forward_list": "cpp"
+        "forward_list": "cpp",
+        "filesystem": "cpp"
     }
 }
